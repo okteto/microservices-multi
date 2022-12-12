@@ -1,0 +1,8 @@
+# dependencies:
+#   - https://github.com/okteto/microservices-vote
+#   - https://github.com/okteto/microservices-worker
+#   - https://github.com/okteto/microservices-result
+
+deploy:
+  - helm upgrade --install postgresql postgresql/postgresql-11.6.2.tgz -f postgresql/values.yml
+  - helm upgrade --install kafka kafka/kafka-17.1.0.tgz -f kafka/values.yml
