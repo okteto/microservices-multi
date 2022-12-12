@@ -1,7 +1,7 @@
-# dependencies:
-#   - https://github.com/okteto/microservices-vote
-#   - https://github.com/okteto/microservices-worker
-#   - https://github.com/okteto/microservices-result
+dependencies:
+  - https://github.com/okteto/microservices-vote
+  - https://github.com/okteto/microservices-worker
+  - https://github.com/okteto/microservices-result
 
 deploy:
   - helm upgrade --install postgresql postgresql/postgresql-11.6.2.tgz -f postgresql/values.yml
